@@ -1,7 +1,7 @@
-# Myriad API 
+# ETL API 
 
 ## Guidelines
-#### Myriad Standards 
+#### ETL Standards 
 * Python3
 * PEP8
 * UnitTests using pytest module
@@ -50,5 +50,5 @@ Looking to go with
 * assets/  
     Static files 
         
-* myriad.wsgi  
+* etl.wsgi  
     flask project endpoint 

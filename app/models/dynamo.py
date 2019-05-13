@@ -111,7 +111,7 @@ class Dynamo():
         raise NotImplementedError
 
     def __repr__(self, ):
-        return "DynamoDb Myriad: {}".format(str(self.name))
+        return "DynamoDb ETL: {}".format(str(self.name))
 
     def __str__(self, ):
         return str(self.name)

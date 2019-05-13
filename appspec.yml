@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/myriad-api-new
+    destination: /var/www/etl-api-new
 hooks:
   BeforeInstall:
     - location: scripts/cleanup.sh

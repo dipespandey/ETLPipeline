@@ -6,7 +6,6 @@ import json
 with open('/home/ubuntu/.creds.json') as handle:
     creds = json.loads(handle.read())
     muid_creds = creds['creds']['muid_creds']
-    ref_creds = creds['creds']['ref_creds']
 
 
 class Config(object):
@@ -27,7 +26,7 @@ class DevConfig(Config):
     """Development configuration."""
     ENV = 'dev'
     DEBUG = True
-    DB_NAME = 'myriad.db'
+    DB_NAME = 'etl.db'
     DB_PATH = os.path.join(Config.PROJECT_ROOT, DB_NAME)
     SQLALCHEMY_DATABASE_URI = 'sqlite:///{0}'.format(DB_PATH)
 

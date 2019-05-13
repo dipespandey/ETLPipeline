@@ -1,5 +1,5 @@
 """
-Myriad API 1.0
+ETL API 1.0
 onboard.py
 ..................
 contains endpoints for onboarding works using the API

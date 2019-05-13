@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf /var/www/myriad-api-new/*
+rm -rf /var/www/etl-api-new/*

@@ -6,7 +6,7 @@ pipelines:
     production:
       - step:
           script:
-            - export APPLICATION_NAME=myriad_code_deploy
+            - export APPLICATION_NAME=etl_code_deploy
             - export DEPLOYMENT_GROUP_NAME=DGMP
             - apt-get update
             - apt-get install -y zip
@@ -17,7 +17,7 @@ pipelines:
     staging:
         - step:
             script:
-              - export APPLICATION_NAME=myriad_staging_deploy
+              - export APPLICATION_NAME=etl_staging_deploy
               - export DEPLOYMENT_GROUP_NAME=DGMS
               - apt-get update
               - apt-get install -y zip

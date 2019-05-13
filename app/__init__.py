@@ -22,7 +22,7 @@ def create_app(config_object=DefaultConfig):
     '''
     app = Flask(__name__)
     register_blueprints(app)
-    CORS(app, origins=["https://myriadx.com", "https://www.pergi.com", "https://2pdx.co", "https://next.therake.com", "https://therake.com", "https://www.hungrygowhere.com", "https://thehoneycombers.com", "https://honeycombers.converce.live"],
+    CORS(app, origins=[],
          headers=['Content-Type'], expose_headers='Access-Control-Allow-Origin')
     return app
 
