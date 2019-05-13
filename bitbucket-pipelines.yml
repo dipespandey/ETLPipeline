@@ -1,0 +1,26 @@
+image: python:3.6.7
+
+pipelines:
+  branches:
+    # pipeline for production
+    production:
+      - step:
+          script:
+            - export APPLICATION_NAME=myriad_code_deploy
+            - export DEPLOYMENT_GROUP_NAME=DGMP
+            - apt-get update
+            - apt-get install -y zip
+            - pip install boto3
+            - zip -r /tmp/artifact.zip *
+            - python codedeploy_deploy.py
+    # pipeline for staging
+    staging:
+        - step:
+            script:
+              - export APPLICATION_NAME=myriad_staging_deploy
+              - export DEPLOYMENT_GROUP_NAME=DGMS
+              - apt-get update
+              - apt-get install -y zip
+              - pip install boto3
+              - zip -r /tmp/artifact.zip *
+              - python codedeploy_deploy.py
